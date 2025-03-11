@@ -10,7 +10,7 @@ def main():
     entrenar el modelo y predecir anomalías.
     """
     interface = "Wi-Fi"  # Cambiar según la interfaz disponible
-    count = 100
+    count = 110
     
     packets = capture_traffic(interface, count)
     data = extract_features(packets)
