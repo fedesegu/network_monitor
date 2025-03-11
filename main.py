@@ -9,6 +9,11 @@ def main():
     count = 110
     
     packets = capture_traffic(interface, count)
+
+    if not packets:  # Si no hay paquetes, termina el programa
+        print("No se capturaron paquetes.")
+        return
+
     data = extract_features(packets)
     
     if data.empty:
